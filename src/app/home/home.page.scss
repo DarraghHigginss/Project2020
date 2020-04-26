@@ -1,0 +1,48 @@
+ion-content{
+    --background:url(../../assets/background.jpg) no-repeat center center / cover;
+}
+//css involved in creation of first page
+ion-content > h1 {
+    font-size: 22px;
+    margin: 0 auto;
+    position: relative;
+    top:45%;
+    left:22%;
+    right:25%;
+    color:#ffff;
+}
+ion-content > h2 {
+    font-size: 22px;
+    margin: 0 auto;
+    position: relative;
+    top:45%;
+    left:22%;
+    right:25%;
+    color:#ffff;
+}
+
+.btn-center-align{
+    text-align: center!important;
+}
+
+.btn-center-align ion-button{
+    color: blue;
+}
+
+.btn-center-align ion-button:hover{
+    color: black;
+}
+
+ion-item{
+    --background: transparent;
+    color: blue;
+    --min-height: 40px;
+}
+
+ion-list{
+    background-color: transparent;
+}
+
+:host{
+    --min-width: 39px;
+}

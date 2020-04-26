@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button><!--side menu function-->
+    </ion-buttons>
+    <ion-title>Current Weather</ion-title><!--Title bar-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <li *ngFor = "let weather of weatherInformation">
+    <img height=100 width= 100 src=" https://www.novinite.com/media/images/2019-07/photo_verybig_198527.jpg "> <!--image source to show clouds as i could not get the icon to appear for the current weather status-->
+      <!--The item below worked has shown when the code has been run-->
+     <h2> {{weather.description}} </h2>
+     <!--I could not get the below items to show up in the west page i am unsure as to why they would not show up -->
+     <!--I tried to folow the videos that you had on moodle, I think I may have made one of these an object and the other information is stored in array-->
+      <h3>{{main.temp}}</h3> 
+      <P>{{main.feels_like}} </P>
+      <P> {{main.temp_min}}</P>
+      <P> {{main.temp_max}}</P>
+      <P> {{main.pressure}}</P>
+      <P> {{main.humidity}}</P>
+    
+    </li>
+
+</ion-content>
